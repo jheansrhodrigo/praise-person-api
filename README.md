@@ -28,16 +28,17 @@ The application can be accessed at `localhost:3000`.
 ## General Rules
 User registration
 
-- it is not allowed to register more than one user with the same email.
-
 - it is not allowed to register user without email.
+
+- it is not allowed to register more than one user with the same email.
 
 Tag registration
 
+- it is not allowed to register an unnamed tag.
+
 - it is not allowed to register more than one tag with the same name.
 
-- it is not allowed to register an unnamed tag.
-Only administrator users can perform tag registration.
+- Only administrator users can perform tag registration.
 
 Register of compliments
 

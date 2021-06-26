@@ -6,7 +6,7 @@
     "password": "postgres",
     "database": "praiseperson",
     "entities": [
-        "src/entity/*.ts"
+        "src/entities/*.ts"
     ],
     "migrations": [
         "src/database/migrations/*.ts"
