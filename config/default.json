@@ -1,0 +1,8 @@
+{
+    "App": {
+        "auth": {
+            "key": "some-key",
+            "tokenExpiresIn": "1d"
+        }
+    }
+}

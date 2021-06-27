@@ -1,0 +1,3 @@
+/**
+ * Describe users functional tests
+ */
