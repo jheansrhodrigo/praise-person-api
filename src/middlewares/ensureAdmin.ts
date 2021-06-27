@@ -1,13 +1,19 @@
-import { NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express'
+import { getCustomRepository } from 'typeorm'
+import { UserRepository } from '../repositories/UserRepository'
 
 /**
- * [Middleware] Verify user authentication
+ * [Middleware] Verify user admin
  */
-export function ensureAdmin(request: Request, response: Response, next: NextFunction) {
+export async function ensureAdmin(request: Request, response: Response, next: NextFunction) {
     /**
      * implements authentication (JWT)
      */
-    const admin = true
+    const { user_id } = request
+
+    const userRepository = getCustomRepository(UserRepository)
+
+    const { admin } = await userRepository.findOne(user_id)
 
     if (admin)
         return next()

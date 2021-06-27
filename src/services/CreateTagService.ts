@@ -1,5 +1,5 @@
-import { getCustomRepository } from "typeorm"
-import { TagRepository } from "../repositories/TagRepository"
+import { getCustomRepository } from 'typeorm'
+import { TagRepository } from '../repositories/TagRepository'
 
 class CreateTagService {
     async execute(name: string) {
